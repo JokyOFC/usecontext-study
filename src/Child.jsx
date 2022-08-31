@@ -8,7 +8,18 @@ const Child = () => {
 
   return (
     <div>
-      <h1>{count}</h1>
+      <div
+        style={{
+          alignItems: "center",
+          justifyContent: "center",
+          display: "flex",
+          flexDirection: "row",
+          gap: "135px",
+        }}
+      >
+        <h1>{count.count1}</h1>
+        <h1>{count.count2}</h1>
+      </div>
       <Child2 />
     </div>
   );
